@@ -2,7 +2,6 @@ name: 'my_dbt_project'
 version: '1.0'
 profile: 'default'
 
-# Configuring the directories for your models, snapshots, tests, and more
 model-paths: ["models"]
 analysis-paths: ["analysis"]
 test-paths: ["tests"]
@@ -10,7 +9,6 @@ seed-paths: ["data"]
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
 
-# Configuring the target and clean
 target-path: "target"
 clean-targets: ["target", "dbt_modules"]
 
@@ -18,3 +16,6 @@ models:
   my_dbt_project:
     example:
       materialized: view
+
+dbt-cloud:
+  project-id: 70403103930802
